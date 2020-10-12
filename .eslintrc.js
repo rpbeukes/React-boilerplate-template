@@ -12,7 +12,7 @@ module.exports = {
     "parser": "@typescript-eslint/parser",
     // https://eslint.org/docs/user-guide/configuring#specifying-parser-options
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md
-    "parserOptions": {
+    "parserOptions": { 
         "ecmaFeatures": {
             "jsx": true
         },
@@ -24,5 +24,11 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+    },
+    "settings": {
+        "react": {
+          "pragma": "React",
+          "version": "detect"
+        }
     }
 };
