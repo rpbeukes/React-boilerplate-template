@@ -1,3 +1,4 @@
+// https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md
 module.exports = {
     "env": {
         "browser": true,
@@ -9,11 +10,13 @@ module.exports = {
         "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
+    // https://eslint.org/docs/user-guide/configuring#specifying-parser-options
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 12,
+        "ecmaVersion": 12, // 12 = 2021
         "sourceType": "module"
     },
     "plugins": [
