@@ -1,4 +1,4 @@
-# ignore linting the lint config
+# ignore the lint config file
 .eslintrc.js 
 
 # ignore linting these directories
