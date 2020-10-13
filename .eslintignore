@@ -1,0 +1,6 @@
+# ignore the lint config file
+.eslintrc.js 
+
+# ignore linting these directories
+/node_modules
+/build
