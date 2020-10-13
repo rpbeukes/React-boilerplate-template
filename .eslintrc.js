@@ -27,6 +27,7 @@ module.exports = {
     // vscode might pop-up a notification: There are multiple formatter for 'Javascript' files. I selected Prettier as default.
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'react/prop-types': 'off',
 
     // react hook rules
     'react-hooks/rules-of-hooks': 'error',
