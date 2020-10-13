@@ -21,12 +21,16 @@ module.exports = {
     ecmaVersion: 12, // 12 = 2021
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'react-hooks'],
   rules: {
     // disable the rule for all files
     // vscode might pop-up a notification: There are multiple formatter for 'Javascript' files. I selected Prettier as default.
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+
+    // react hook rules
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
   /*
   // there is the option to apply to specific files only. 
