@@ -17,7 +17,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12, // 12 = 2021
+    ecmaVersion: 2020, // could 2020 or 11. I think it is easier to use the year instead of a version number here.
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'prettier', 'react-hooks'],
