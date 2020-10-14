@@ -1,5 +1,19 @@
 # Configure React with TypeScript, ESLint, Prettier and Storybook
 
+## Table of Contents
+
+  - [Make sure you run Node.js v10+](#make-sure-you-run-nodejs-v10)
+  - [Use `Create React App` (CRA) and create a TypeScript supported React app](#use-create-react-app-crahttpsgithubcomfacebookcreate-react-app-and-create-a-typescript-supported-react-app)
+  - [Organise some devDependencies (optional - personal thing for me)](#organise-some-devdependencies-optional-personal-thing-for-me)
+  - [Configure `eslint`](#configure-eslint)
+    - [Other GitHub resources](#other-github-resources)
+  - [Configure Prettier](#configure-prettier)
+    - [Integrate ESLint and Prettier](#integrate-eslint-and-prettier)
+  - [Add eslint-plugin-react-hooks linting rules](#add-eslint-plugin-react-hooks-linting-rules)
+    - [React hooks rules with eslint-plugin](#react-hooks-rules-with-eslint-plugin)
+  - [Configure Storybook](#configure-storybook)
+  - [Thanx](#thanx)
+
 ### Make sure you run Node.js v10+
 
 To install check ([Node.js installation](https://nodejs.org/en/) or [Node Version Manager installation](https://github.com/nvm-sh/nvm)).
@@ -251,14 +265,14 @@ Use your own discretion to fix the warnings.
   - [eslint.org - Configuration](https://eslint.org/docs/user-guide/configuring)
   - [Why typescript-eslint](https://github.com/typescript-eslint/typescript-eslint#how-does-typescript-eslint-work-and-why-do-you-have-multiple-packages)
 
-#### Other resources:
+#### Other GitHub resources
 
 - GitHub:
   - [michielbouw/react-typescript-eslint-prettier-boilerplate](https://github.com/michielbouw/react-typescript-eslint-prettier-boilerplate)
 
 ### Configure Prettier
 
-(NOTE: I had to restart VSCode before the linting rules showed up in my `.ts/.tsx` files.)
+(Note: I had to restart VSCode before the linting rules showed up in my `.ts/.tsx` files.)
 
 #### Integrate ESLint and Prettier
 
@@ -279,7 +293,10 @@ npm add prettier eslint-config-prettier eslint-plugin-prettier -D
 I tested the code by running `npm run lint` and got many errors suggesting I needed double quotes.
 Seems like the React way is single quotes, so I've added a `Prettier` configuration file, `.prettierrc.js`, to use single quotes.
 
-### Add `eslint-plugin-react-hooks` linting rules ([React doco](https://reactjs.org/docs/hooks-rules.html#eslint-plugin))
+### Add `eslint-plugin-react-hooks` linting rules 
+
+#### React hooks rules with eslint-plugin
+[Hooks rules eslint-plugin](https://reactjs.org/docs/hooks-rules.html#eslint-plugin)
 
 Note: This plugin is included by default in Create React App but if you don't have it, use the command below.
 
@@ -304,7 +321,9 @@ I added this to my `.eslintrc.js`:
 
 I think this a good start, expand linting rules as needed.
 
-### Configure Storybook ([Storybook install doco](https://storybook.js.org/docs/react/get-started/install))
+### Configure Storybook 
+
+[Storybook install doco](https://storybook.js.org/docs/react/get-started/install)
 
 ```
 npx sb init
@@ -319,7 +338,7 @@ After execution, there should be new directories:
 
 ---
 
-Thanx to:
+### Thanx
 
 - Jennifer Fu - https://medium.com/better-programming/10-fun-facts-about-create-react-app-eb7124aa3785
 - Carl-Johan Kihl - https://itnext.io/how-to-setup-typescript-eslint-prettier-and-react-in-5-minutes-44cfe8af5081
