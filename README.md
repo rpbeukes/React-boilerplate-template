@@ -3,8 +3,8 @@
 ## Table of Contents
 
   - [Make sure you run Node.js v10+](#make-sure-you-run-nodejs-v10)
-  - [Use `Create React App` (CRA) and create a TypeScript supported React app](#use-create-react-app-crahttpsgithubcomfacebookcreate-react-app-and-create-a-typescript-supported-react-app)
-  - [Organise some devDependencies (optional - personal thing for me)](#organise-some-devdependencies-optional-personal-thing-for-me)
+  - [Use `Create React App` (CRA) and create a TypeScript supported React app](#use-create-react-app-and-create-a-typescript-supported-react-app)
+  - [Organise some devDependencies (optional - personal thing for me)](#organise-some-devdependencies-optional---personal-thing-for-me)
   - [Configure `eslint`](#configure-eslint)
     - [Other GitHub resources](#other-github-resources)
   - [Configure Prettier](#configure-prettier)
@@ -18,7 +18,9 @@
 
 To install check ([Node.js installation](https://nodejs.org/en/) or [Node Version Manager installation](https://github.com/nvm-sh/nvm)).
 
-### Use `Create React App` ([CRA](https://github.com/facebook/create-react-app)) and create a TypeScript supported React app
+### Use `Create React App` and create a TypeScript supported React app
+
+Facebook's create-react-app: [CRA](https://github.com/facebook/create-react-app)
 
 ```
 npx create-react-app create-react-app-with-typescript-template --template typescript
