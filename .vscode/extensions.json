@@ -1,0 +1,10 @@
+{
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"infeng.vscode-react-typescript",
+		"ruiquelhas.vscode-uppercase",
+		"coenraads.bracket-pair-colorizer"
+	],
+}
