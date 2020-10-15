@@ -14,6 +14,8 @@
   - [Configure Storybook](#configure-storybook)
   - [Thanx](#thanx)
 
+---
+
 ### Make sure you run Node.js v10+
 
 To install check ([Node.js installation](https://nodejs.org/en/) or [Node Version Manager installation](https://github.com/nvm-sh/nvm)).
@@ -337,6 +339,19 @@ After execution, there should be new directories:
 - `src/stories`
 
 ![storybook file structure](./images/storyFiles.png)
+
+You should also have changes in your package.json:
+```
+  ....
+  "scripts": {
+    ...
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+    ...
+  },
+  ...
+
+```
 
 ---
 
