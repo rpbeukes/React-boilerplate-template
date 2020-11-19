@@ -31,6 +31,9 @@ module.exports = {
     // react hook rules
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
+    'prettier/prettier': ['error', {
+      'endOfLine':'auto'
+     }],
   },
   /*
   // there is the option to apply to specific files only. 
